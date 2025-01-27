@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { About, Hero, Navbar, Objectives } from "../components";
 
 
