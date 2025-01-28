@@ -57,7 +57,7 @@ const Contacts = () => {
         <div className="mt-4">
             <p>Call: +255743546890</p>
             <p>Adress: P. O. Box 1493 Mbuyuni</p>
-            <p>Email: neus@apa.com</p>
+            <p>Email: neus@apo.com</p>
         </div>
 
         <div className="mt-8">
