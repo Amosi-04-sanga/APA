@@ -8,10 +8,10 @@ const Footer = () => {
         <div className="flex flex-col">
             <h1 className='mt-4'>Visit and learn more on our social medias</h1>
             <div className="flex flex-wrap justify-center gap-4 mt-2">
-                <Image src='/images/icons/facebook.svg' className='block' alt='icon' width={36} height={36} />
-                <Image src='/images/icons/instagram.svg' className='block' alt='icon' width={36} height={36} />
-                <Image src='/images/icons/tiktok.svg' className='block' alt='icon' width={36} height={36} />
-                <Image src='/images/icons/whatsaap.svg' className='block' alt='icon' width={36} height={36} />
+                <Image src='/images/icons/facebook.svg' className='block cursor-pointer' alt='icon' width={36} height={36} />
+                <Image src='/images/icons/instagram.svg' className='block cursor-pointer' alt='icon' width={36} height={36} />
+                <Image src='/images/icons/tiktok.svg' className='block cursor-pointer' alt='icon' width={36} height={36} />
+                <Image src='/images/icons/whatsaap.svg' className='block cursor-pointer' alt='icon' width={36} height={36} />
             </div>
         </div>
 

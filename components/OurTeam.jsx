@@ -11,40 +11,40 @@ const OurTeam = () => {
              
              
              <div className='flex flex-col justify-center items-center'>
-             <div className="rounded-full bg-blue-400">
-                   <img src="/images/slideshow/slideshow1.jpg" alt="photo of member" className='w-[120px] h-[120px] rounded-full block object-cover p-1'/>
+             <div className="rounded-full bg-blue-400 p-[2px]">
+                   <img src="/images/photos/photo.jpg" alt="photo of member" className='w-[120px] h-[120px] rounded-full block object-cover'/>
              </div>
              <p >Neus njugunya</p>
              </div>
 
 
              <div className='flex flex-col justify-center items-center'>
-             <div className="rounded-full bg-blue-400">
-                   <img src="/images/slideshow/slideshow1.jpg" alt="photo of member" className='w-[120px] h-[120px] rounded-full block object-cover p-1'/>
+             <div className="rounded-full bg-blue-400 p-[2px]">
+                   <img src="/images/slideshow/slideshow1.jpg" alt="photo of member" className='w-[120px] h-[120px] rounded-full block object-cover'/>
              </div>
              <p >Martin Kidudu</p>
              </div>
 
 
              <div className='flex flex-col justify-center items-center'>
-             <div className="rounded-full bg-blue-400">
-                   <img src="/images/slideshow/slideshow1.jpg" alt="photo of member" className='w-[120px] h-[120px] rounded-full block object-cover p-1'/>
+             <div className="rounded-full bg-blue-400 p-[2px]">
+                   <img src="/images/slideshow/slideshow1.jpg" alt="photo of member" className='w-[120px] h-[120px] rounded-full block object-cover'/>
              </div>
              <p >Dinnah Munyu</p>
              </div>
 
 
              <div className='flex flex-col justify-center items-center'>
-             <div className="rounded-full bg-blue-400">
-                   <img src="/images/slideshow/slideshow1.jpg" alt="photo of member" className='w-[120px] h-[120px] rounded-full block object-cover p-1'/>
+             <div className="rounded-full bg-blue-400 p-[2px]">
+                   <img src="/images/photos/photo.jpg" alt="photo of member" className='w-[120px] h-[120px] rounded-full block object-cover'/>
              </div>
              <p >Neus njugunya</p>
              </div>
 
 
              <div className='flex flex-col justify-center items-center'>
-             <div className="rounded-full bg-blue-400">
-                   <img src="/images/slideshow/slideshow1.jpg" alt="photo of member" className='w-[120px] h-[120px] rounded-full block object-cover p-1'/>
+             <div className="rounded-full bg-blue-400 p-[2px]">
+                   <img src="/images/photos/photo.jpg" alt="photo of member" className='w-[120px] h-[120px] rounded-full block object-cover'/>
              </div>
              <p >Neus njugunya</p>
              </div>
