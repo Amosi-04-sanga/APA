@@ -1,6 +1,9 @@
 'use client'
 import Image from 'next/image'
 import React, { useState } from 'react'
+import { usePathname } from "next/navigation";
+import { navLinks } from "@/constants";
+import { Fade } from "react-awesome-reveal";
 
 
 const Navbar = () => {
