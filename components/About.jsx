@@ -33,31 +33,32 @@ const About = () => {
     </div>
 
 
+    <div className='text-center min-h-[50vh] relative'>
+        <div className='bg-[#312096] opacity-60 absolute top-0 left-0 w-full h-full z-[1] '/>
+        <Image className='block pt-16 mx-auto' src='/images/values.svg' alt='' width={80} height={80}/>
 
-    <div className='mt-16 px-8'>
-       <Image className='block mx-auto' src='/images/values.svg' alt='' width={80} height={80}/>
         <h1 className='text-2xl text-center font-bold'>Core values</h1>
         
-        <div className='mt-4 mb-20 grid place-content-center'>
+        <div className='mt-4 pb-10 mb-10 grid place-content-center'>
         {
            values.map( (item, index) => (
             <>
-               <div className='flex gap-2 justify-start items-center' key={index}>
+               <div key={index} className='flex gap-2 justify-start items-center'>
                <Image src='/images/check.svg' alt='' width={10} height={10}/>
-               <p>{item}</p>
+               <p className='font-bold'>{item}</p>
                </div>
             </>
            ))
         }
         </div>
 
-
-       </div>
+    </div>
    
-
+   
     </div>
   )
 }
 
 export default About
+
 
