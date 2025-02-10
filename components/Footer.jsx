@@ -21,11 +21,11 @@ const Footer = () => {
 
             <div className="mt-2">
                 <ul>
-                    <li className='cursor-pointer'> <Link href='/'>Family</Link> </li>
-                    <li className='cursor-pointer'> <Link href='/'>parening</Link> </li>
-                    <li className='cursor-pointer'> <Link href='/'>kids literacy</Link> </li>
-                    <li className='cursor-pointer'> <Link href='/'>about us</Link> </li>
-                    <li className='cursor-pointer'> <Link href='/'>contact us</Link> </li>
+                    <li className='cursor-pointer'> <Link href='/talents'>Kids Talents</Link> </li>
+                    <li className='cursor-pointer'> <Link href='/parenting'>parening</Link> </li>
+                    <li className='cursor-pointer'> <Link href='/blog'>Blog</Link> </li>
+                    <li className='cursor-pointer'> <Link href='/about'>about us</Link> </li>
+                    <li className='cursor-pointer'> <Link href='#contacts'>contact us</Link> </li>
                 </ul>
             </div>
         </div>

@@ -28,19 +28,23 @@ const navLinks = [
       label: "Home",
     },
     {
-      route: "#news",
-      label: "News and events",
+      route: "/kidnames",
+      label: "Names",
+    },
+    {
+      route: "/kidtalents",
+      label: "Talents",
+    },
+    {
+      route: "/parenting",
+      label: "Parenting",
     },
     {
       route: "/blog",
       label: "Blog",
     },
     {
-      route: '#contacts',
-      label: "Contact us",
-    },
-    {
-      route: "#about",
+      route: "/about",
       label: "About us",
     },
   ];
@@ -64,10 +68,18 @@ const HeroSlideshow = [
 
 const values = ['confidentiality', 'responsibility', 'time management', 'creativity', 'care']
 
+const parentingValues = [
+  'Emotional Security',
+  'Moral and Ethical Development',
+  'Academic success',
+  'Social Skills and Relationships',
+  'descpline and responsibility',
+]
 
 export {
     navLinks,
     HeroSlideshow,
     values,
-    posts
+    posts,
+    parentingValues,
 }

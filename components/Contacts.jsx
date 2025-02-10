@@ -51,7 +51,7 @@ const Contacts = () => {
 
 
   return (
-    <div className='mt-20 px-8'>
+    <div className='mt-20 px-8' id="contacts" >
         <h1 className="text-3xl font-bold text-center">Get in touch with us</h1>
         
         <div className="mt-4">
