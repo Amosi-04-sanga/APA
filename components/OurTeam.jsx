@@ -52,6 +52,14 @@ const OurTeam = () => {
              <div className='absolute -bottom-10 left-[50%] -translate-x-1/2 w-[120px] h-1 bg-gradient-to-r from-white via-blue-500 to-white' />
 
         </div>
+
+      <div className="mt-32 text-center">
+         <h1 className="pt-8 text-2xl font-bold">we collaborate with</h1>
+          <Image src='/images/homestartLogo.png' alt='collaborate' className='block mt-4 mx-auto' width={140} height={140} />
+          <h1 className="mt-4 text-xl">Home-start Tanzania</h1>
+          <p className='mt-2'>Helping families thrieve</p>           
+      </div>
+
     </div>
   )
 }
