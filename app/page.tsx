@@ -1,4 +1,4 @@
-import { About, Contacts, Footer, Hero, Navbar, News, Objectives, OurTeam } from "../components";
+import { About, Contacts, Hero, News, Objectives, OurTeam } from "../components";
 
 
 export default function Home() {
