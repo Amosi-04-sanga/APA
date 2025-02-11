@@ -21,7 +21,7 @@ const Footer = () => {
 
             <div className="mt-2">
                 <ul>
-                    <li className='cursor-pointer'> <Link href='/talents'>Kids Talents</Link> </li>
+                    <li className='cursor-pointer'> <Link href='/kidtalents'>Kids Talents</Link> </li>
                     <li className='cursor-pointer'> <Link href='/parenting'>parening</Link> </li>
                     <li className='cursor-pointer'> <Link href='/blog'>Blog</Link> </li>
                     <li className='cursor-pointer'> <Link href='/about'>about us</Link> </li>
