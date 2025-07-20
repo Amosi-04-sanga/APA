@@ -42,12 +42,10 @@ const About = () => {
         <div className='mt-4 pb-10 mb-10 grid place-content-center'>
         {
            values.map( (item, index) => (
-            <>
                <div key={index} className='flex gap-2 justify-start items-center'>
                <Image src='/images/check.svg' alt='' width={10} height={10}/>
                <p className='font-bold'>{item}</p>
                </div>
-            </>
            ))
         }
         </div>
