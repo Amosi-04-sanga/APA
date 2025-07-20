@@ -29,7 +29,7 @@ const Hero = () => {
 
         <div className="text-center font-bold w-full text-white text-2xl z-10 absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2">
           <h1>HAPPY FAMILY</h1>
-          <h1>BETTER PATENTING</h1>
+          <h1>BETTER PARENTING</h1>
           <h1>BETTER KIDS LITERACY</h1>
         </div>
       </div>
