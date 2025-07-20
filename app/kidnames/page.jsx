@@ -8,13 +8,11 @@ const page = () => {
 
         <p className='mt-4'>A baby’s name is more than just an identity; it is a lifelong gift that carries meaning, history, and sometimes even destiny. Names reflect culture, tradition, and family heritage, shaping a child’s sense of belonging and self-worth. Parents often spend a lot of time choosing the perfect name, considering factors like uniqueness, pronunciation, meaning, and religious or cultural significance. A well-chosen name can boost a child's confidence, create a positive first impression, and even influence how they are perceived by others throughout life.</p>
         
-        <div className="mt-8 flex flex-wrap justify-center items-center gap-4">
+        <div className="mt-8 flex flex-wrap justify-center items-center gap-2">
            <Link href='/kidnames/girlnames' className='rounded-md block px-2 py-1 bg-[#10284A] text-white'>Babynames A to Z</Link>
-           <Link href='/kidnames/girlnames' className='rounded-md block px-2 py-1 bg-[#10284A] text-white'>Girl names</Link>
-           <Link href='/kidnames/girlnames' className='rounded-md block px-2 py-1 bg-[#10284A] text-white'>Girl names</Link>
+           <Link href='/kidnames/girlnames' className='rounded-md block px-2 py-1 bg-[#10284A] text-white'>Female names</Link>
+           <Link href='/kidnames/girlnames' className='rounded-md block px-2 py-1 bg-[#10284A] text-white'>Male names</Link>
            <Link href='/kidnames/girlnames' className='rounded-md block px-2 py-1 bg-[#10284A] text-white'>Gender neutral names</Link>
-           <Link href='/kidnames/girlnames' className='rounded-md block px-2 py-1 bg-[#10284A] text-white'>Nicknames</Link>
-           <Link href='/kidnames/girlnames' className='rounded-md block px-2 py-1 bg-[#10284A] text-white'>Themed names</Link>
         </div>
     </div>
   )

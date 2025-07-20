@@ -66,7 +66,7 @@ const HeroSlideshow = [
 
 ]
 
-const values = ['confidentiality', 'responsibility', 'time management', 'creativity', 'care']
+const values = ['confidentiality', 'responsibility', 'time management', 'love', 'creativity', 'care']
 
 const parentingValues = [
   'Emotional Security',

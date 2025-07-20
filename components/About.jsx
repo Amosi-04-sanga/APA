@@ -8,7 +8,7 @@ const About = () => {
     <div className='mt-20'>
     <Image className='block mx-auto' src='/images/about.svg' alt='' width={50} height={50}/>
     <h1 className='text-center text-3xl mt-4'>Who we are</h1>
-    <p className="mt-4 px-8">We believe in nurturing the next generation of confident, compassionate, and successful African children. we aim to share valuable insights, practical tips, and cultural wisdom on effective parenting approaches rooted in African values</p>
+    <p className="mt-4 px-8">We believe in nurturing the next generation of confident, compassionate, and successful children. we aim to share valuable insights, practical tips, and cultural wisdom on effective parenting we believe in developing children inborn talents and their potentials for their bright future.</p>
     <button className="block mx-auto mt-4 px-2 py-1 hover:bg-[#199DEF] transition-all duration-300 rounded-md border-2 border-solid border-[#199DEF]">Read More</button>
     
 
@@ -34,7 +34,7 @@ const About = () => {
 
 
     <div className='text-center min-h-[50vh] relative'>
-        <div className='bg-[#312096] opacity-60 absolute top-0 left-0 w-full h-full z-[1] '/>
+        <div className=' opacity-60 absolute top-0 left-0 w-full h-full z-[1] '/>
         <Image className='block pt-16 mx-auto' src='/images/values.svg' alt='' width={80} height={80}/>
 
         <h1 className='text-2xl text-center font-bold'>Core values</h1>
@@ -44,7 +44,7 @@ const About = () => {
            values.map( (item, index) => (
                <div key={index} className='flex gap-2 justify-start items-center'>
                <Image src='/images/check.svg' alt='' width={10} height={10}/>
-               <p className='font-bold'>{item}</p>
+               <p className='text-xl capitalize text-[#10284A]'>{item}</p>
                </div>
            ))
         }

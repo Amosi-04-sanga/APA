@@ -6,7 +6,7 @@ import React from 'react'
 const page = () => {
   return (
     <div className='px-8'>
-        <h1 className='mt-8 font-bold text-center text-2xl'>Developing a kids talents</h1>
+        <h1 className='mt-8 font-bold text-center text-2xl'>Developing your kids talents</h1>
 
         <p className='mt-4'>Every child is born with unique abilities and interests. Some children naturally excel in music, others in drawing, sports, storytelling, problem-solving, or leadership. These natural abilities are called talents. Talents are like seeds—if nurtured and developed, they can grow into something amazing!</p>
         <h1 className='mt-8 text-center text-xl font-bold'>ways children can develop their talents</h1>
