@@ -76,10 +76,50 @@ const parentingValues = [
   'descpline and responsibility',
 ]
 
+const members = [
+  {
+    name: 'Alice Johnson',
+    position: 'CEO',
+    photo: 'https://randomuser.me/api/portraits/women/44.jpg',
+  },
+  {
+    name: 'Bob Smith',
+    position: 'CTO',
+    photo: 'https://randomuser.me/api/portraits/men/34.jpg',
+  },
+  {
+    name: 'Carol Williams',
+    position: 'Lead Designer',
+    photo: 'https://randomuser.me/api/portraits/women/65.jpg',
+  },
+  {
+    name: 'David Brown',
+    position: 'Senior Developer',
+    photo: 'https://randomuser.me/api/portraits/men/76.jpg',
+  },
+  {
+    name: 'Eva Martinez',
+    position: 'Marketing Manager',
+    photo: 'https://randomuser.me/api/portraits/women/22.jpg',
+  },
+  {
+    name: 'Frank Wilson',
+    position: 'Product Manager',
+    photo: 'https://randomuser.me/api/portraits/men/58.jpg',
+  },
+  {
+    name: 'Grace Lee',
+    position: 'HR Specialist',
+    photo: 'https://randomuser.me/api/portraits/women/31.jpg',
+  },
+];
+
+
 export {
     navLinks,
     HeroSlideshow,
     values,
     posts,
     parentingValues,
+    members
 }

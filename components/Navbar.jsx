@@ -25,7 +25,7 @@ const pathname = usePathname()
       <div
         className={`fixed ${
           !openMenu ? "-left-[80vw]" : "left-0"
-        } transition-all duration-800 z-20 bg-menu-light dark:bg-menu-dark md:hidden top-[70px] w-[80vw] sm:w-[70w] h-[90vh] flex justify-start`}
+        } transition-all duration-800 z-40 bg-menu-light dark:bg-menu-dark md:hidden top-[70px] w-[80vw] sm:w-[70w] h-[90vh] flex justify-start`}
       >
         <div className="flex flex-col gap-8 bg-[#10284A] p-6 pr-28 pt-12">
           {navLinks.map((link, index) => {
