@@ -71,11 +71,13 @@ const values = [
 ];
 
 const parentingValues = [
-  "Emotional Security",
-  "Moral and Ethical Development",
-  "Academic success",
-  "Social Skills and Relationships",
-  "descpline and responsibility",
+  "Demonstrates Unconditional Love",
+  "Provides Consistent Guidance and Disciplin",
+  "Models Positive Behavior",
+  "Nurtures Emotional and Mental Well-being",
+  "Encourages Education and Lifelong Learning",
+  "Instills Strong Moral and Spiritual Values",
+  "Prepares Children for Independence",
 ];
 
 const members = [

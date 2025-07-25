@@ -30,10 +30,7 @@ const allStepsSchema = step1Schema
   .merge(step3Schema)
   .merge(step4Schema);
 
-type Step1Type = z.infer<typeof step1Schema>;
-type Step2Type = z.infer<typeof step2Schema>;
-type Step3Type = z.infer<typeof step3Schema>;
-type Step4Type = z.infer<typeof step4Schema>;
+
 type AllStepsType = z.infer<typeof allStepsSchema>;
 
 const steps = [
@@ -83,7 +80,6 @@ export default function ContactPage() {
     handleSubmit,
     trigger,
     formState: { errors },
-    getValues,
   } = methods;
 
   const onNext = async () => {

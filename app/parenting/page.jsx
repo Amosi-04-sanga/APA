@@ -7,7 +7,7 @@ const page = () => {
   return (
     <div className="px-8">
       <div className="text-center">
-        <h1 className="mt-8 inline-block font-bold text-2xl text-center px-2  text-[#10284A] bg-orange-200">
+        <h1 className="mt-8 inline-block font-bold text-3xl text-center px-2  text-[#10284A] bg-orange-200">
           Parenting
         </h1>
       </div>
@@ -20,18 +20,29 @@ const page = () => {
         their cultural heritage
       </p>
 
-      <h1 className="mt-8 mb-4 font-bold text-center text-xl">
-        why parenting is important
+      <h1 className="mt-8 text-center text-xl text-[#10284A] font-bold">
+        Our initiative
       </h1>
+      <p className="mt-2">
+        Our organiziton is going to use the most recent DNA technology tests to
+        discover every children talent within a child and suggest a life carrier
+        related to that talent
+      </p>
 
-      {parentingValues.map((item, index) => (
-        <div>
+      <h1 className="mt-8 text-center text-xl text-[#10284A] font-bold">
+        Who is successfull parent
+      </h1>
+      <p className="mt-2 italic">
+        here are 7 key characters on successfull parenting{" "}
+      </p>
+      <div className="mt-2">
+        {parentingValues.map((item, index) => (
           <div key={index} className="flex gap-2 justify-start">
             <Image src="/images/check.svg" alt="" width={10} height={10} />
             <p>{item}</p>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
 
       <h1 className="text-center font-bold text-xl mt-8">
         parenting recent posts
