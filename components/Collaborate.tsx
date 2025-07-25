@@ -33,7 +33,25 @@ const allStepsSchema = step1Schema
 
 type AllStepsType = z.infer<typeof allStepsSchema>;
 
-const steps = [
+const fieldNames = [
+  "message",
+  "fullName",
+  "email",
+  "phone",
+  "address",
+  "otherInfo",
+  "organization",
+  "position",
+  "reason",
+] as const;
+
+type FieldName = typeof fieldNames[number];
+
+const steps: {
+  label: string;
+  fields: FieldName[];
+  schema: z.ZodTypeAny;
+}[] = [
   {
     label: "Personal Info",
     fields: ["fullName", "email", "phone"],
@@ -83,10 +101,14 @@ export default function ContactPage() {
   } = methods;
 
   const onNext = async () => {
-    const currentStepFields = steps[step].fields;
-    const valid = await trigger(currentStepFields as any);
-    if (valid) setStep((s) => s + 1);
-  };
+  if (step >= steps.length) return; // prevent overflow
+
+  const currentStepFields = steps[step].fields;
+
+  const valid = await trigger(currentStepFields); // assuming fields is string[]
+  if (valid) setStep((s) => s + 1);
+};
+
 
   const onBack = () => setStep((s) => s - 1);
 
