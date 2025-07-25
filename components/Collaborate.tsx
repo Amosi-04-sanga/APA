@@ -92,7 +92,7 @@ export default function ContactPage() {
     if (step > 0) setStep((s) => s - 1);
   };
 
-  const onSubmit = (data: any) => {
+  const onSubmit = (data: any) => { 
     setSubmitted(true);
     console.log("Collaboration Request Submitted:", data);
   };
