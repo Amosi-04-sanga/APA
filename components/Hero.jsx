@@ -2,7 +2,8 @@
 import React, { useEffect, useState } from "react";
 import { HeroSlideshow } from "../constants";
 import Image from "next/image";
-import { Fade } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
+
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -30,15 +31,15 @@ const Hero = () => {
   return (
     <div>
       <div className="flex items-center justify-around h-[30vh]">
-        <div className="p-2">
+        <Slide className="p-2">
           <p className="md:text-3xl text-2xl uppercase font-bold ">
             The smartest guide <br /> for nurturing{" "}
           </p>
-        </div>
+        </Slide>
         <div className=" ">
           <Image
-            width={250}
-            height={250}
+            width={200}
+            height={200}
             src="/images/logo.svg"
             alt="logo image"
             className=""
