@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const News = () => {
   return (
-    <div className="mt-28 px-8 relative">
+    <div className="mt-8 px-8 relative">
       <h1 className="text-3xl text-center font-bold">Latest news</h1>
 
       <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
@@ -27,7 +27,7 @@ const News = () => {
               widely across countries and ethnic group
             </p>
 
-            <button className="block mx-auto mt-4 px-2 py-1 hover:bg-[#199DEF] transition-all duration-300 rounded-md border-2 border-solid border-[#199DEF]">
+            <button className="block mx-auto mt-4 px-2 py-1 hover:bg-[#199DEF] transition-all duration-300 rounded-md border-[1px] border-solid border-[#199DEF]">
               Read More
             </button>
           </div>

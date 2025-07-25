@@ -14,6 +14,8 @@ const page = () => {
            <Link href='/kidnames/girlnames' className='rounded-md block px-2 py-1 bg-[#10284A] text-white'>Male names</Link>
            <Link href='/kidnames/girlnames' className='rounded-md block px-2 py-1 bg-[#10284A] text-white'>Gender neutral names</Link>
         </div>
+
+        <p className='text-green-600 text-center mt-8 text-3xl'>  comming soon!</p>
     </div>
   )
 }

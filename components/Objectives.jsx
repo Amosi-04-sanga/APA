@@ -3,8 +3,8 @@ import React from "react";
 
 const Objectives = () => {
   return (
-    <div className="mt-16 mx-8">
-      <div className="">
+    <div className="mt-16 ">
+      <div className="mx-8">
         <Image
           className="block mx-auto"
           src="/images/about.svg"
@@ -12,7 +12,11 @@ const Objectives = () => {
           width={50}
           height={50}
         />
-        <h1 className="text-center text-3xl mt-4">Who we are</h1>
+        <div className="text-center">
+          <h1 className="text-center text-3xl mt-4 text-[#10284A] inline-block px-1 mx-auto bg-orange-100 font-bold">
+            Who we are
+          </h1>
+        </div>
         <p className="mt-4">
           We believe in nurturing the next generation of confident,
           compassionate, and successful children. we aim to share valuable
@@ -20,20 +24,24 @@ const Objectives = () => {
           we believe in developing children inborn talents and their potentials
           for their bright future.
         </p>
-        <button className="block mx-auto mt-4 px-2 py-1 hover:bg-[#199DEF] hover:text-white transition-all duration-300 rounded-md border-2 border-solid border-[#199DEF]">
+        <button className="block mx-auto mt-4 px-2 py-1 hover:bg-[#199DEF] hover:text-white transition-all duration-300 rounded-md border-[1px] border-[#199DEF]">
           Read More
         </button>
       </div>
 
-      <div className="mt-16 max-w-[350px]">
+      <div className="mt-16 mx-4 max-w-[450px]">
         <Image
           src="/images/objectives.svg"
           alt="objectives"
           className="block mx-auto"
-          width={80}
-          height={80}
+          width={50}
+          height={50}
         />
-        <h1 className="text-center mt-4 font-bold text-3xl">Our objectives</h1>
+        <div className="text-center">
+          <h1 className="mt-4 font-bold text-3xl text-[#10284A] inline-block px-1 mx-auto bg-orange-100">
+            Our objectives
+          </h1>
+        </div>
         <div className="overflow-y  rounded-lg mt-8 h-[60vh] p-4 border-[#4272B2] border-solid border-2">
           <div className="p-4 relative rounded-md text-white bg-[#2D3572]">
             <p className="absolute -left-4 -top-2 z-10 w-8 h-8 rounded-full bg-inherit border-white border-solid border-2 text-xl p-1 flex justify-center items-center">

@@ -64,7 +64,7 @@ const Contacts = () => {
             <h1 className="text-xl">Email us by filling credentials below:</h1>
             
             <Zoom>
-        <div className="rounded-lg mt-6 bg-[#2D3572] p-4 py-8 mx-auto max-w-[400px]">
+        <div className="rounded-lg mt-6 bg-blue-300 p-4 py-8 mx-auto max-w-[400px]">
           <form onSubmit={submitHandler}>
             <div className="mt-4">
               <input
@@ -101,7 +101,7 @@ const Contacts = () => {
             </div>
 
             <div className="mt-8">
-            <button className="block mx-auto bg-white mt-4 px-2 py-1 hover:bg-[#199DEF] transition-all duration-300 rounded-md border-2 border-solid border-[#199DEF]">Send Message</button>
+            <button className="block mx-auto bg-white mt-4 px-2 py-1 hover:border-[#8796a0] transition-all duration-300 rounded-md border-2 border-solid border-[#c1c9ce]">Send Message</button>
 
             </div>
           </form>

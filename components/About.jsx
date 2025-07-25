@@ -31,7 +31,7 @@ const About = () => {
               width={70}
               height={70}
             />
-            <h1 className="text-2xl">Our Misson</h1>
+            <h1 className="text-2xl ">Our Misson</h1>
             <p>
               imparting parents, guardians, youth and children stakeholders with
               efficient parenting skills and knowledge.
@@ -40,7 +40,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="text-center min-h-[50vh] relative">
+      <div className="text-center min-h-[50vh] relative bg-gradient-to-br from-blue-50 via-white to-blue-100">
         <div className=" opacity-60 absolute top-0 left-0 w-full h-full z-[1] " />
         <Image
           className="block pt-16 mx-auto"
@@ -48,15 +48,15 @@ const About = () => {
           alt=""
           width={80}
           height={80}
-        />
+        /> 
 
-        <h1 className="text-2xl text-center font-bold">Core values</h1>
+        <h1 className="text-2xl text-center font-bold text-[#10284A]">Core values</h1>
 
-        <div className="mt-4 pb-10 mb-10 grid place-content-center">
+        <div className="mt-4 pb-10 mb-10 grid place-content-center ">
           {values.map((item, index) => (
             <div key={index} className="flex gap-2 justify-start items-center">
               <Image src="/images/check.svg" alt="" width={10} height={10} />
-              <p className="text-xl capitalize text-blue-900 ]">{item}</p>
+              <p className="text-xl capitalize text-[#10284A]">{item}</p>
             </div>
           ))}
         </div>
