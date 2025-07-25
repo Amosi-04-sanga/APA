@@ -32,7 +32,7 @@ const Hero = () => {
     <div>
       <div className="flex items-center justify-around h-[30vh]">
         <Slide className="p-2">
-          <p className="md:text-3xl text-2xl uppercase font-bold ">
+          <p className="md:text-3xl text-yellow-800 text-2xl uppercase font-bold ">
             The smartest guide <br /> for nurturing{" "}
           </p>
         </Slide>

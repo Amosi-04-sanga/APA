@@ -86,7 +86,7 @@ const OurTeam = () => {
         <div className="absolute -bottom-8 left-[50%] -translate-x-1/2 w-[120px] h-1 bg-gradient-to-r from-white via-blue-500 to-white" />
       </div>
       {}
-      <div className="mt-16">
+      <div className="mt-28">
         <Collaborate />
       </div>
     </div>

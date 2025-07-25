@@ -12,9 +12,9 @@ const Navbar = () => {
 
   return (
     <div className="bg-[#10284A] sticky top-0 left-0 z-20 flex justify-between items-center h-[70px] p-2">
-      <Link onClick={() => setOpenMenu(false)} href="/">
-        <Image src="/images/logo.svg" alt="logo" width={75} height={75} />
-      </Link>
+      <p className="text-white text-sm">
+        info@africaparenting.org
+      </p>
 
       <div className="px-4 cursor-pointer">
         <Image
