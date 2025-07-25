@@ -4,6 +4,7 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FormProvider, useForm } from "react-hook-form";
 
+// Zod schemas (can remain even in JSX)
 const step1Schema = z.object({
   fullName: z.string().min(1, "Full Name is required"),
   email: z.string().email("Enter a valid email address"),
@@ -30,28 +31,7 @@ const allStepsSchema = step1Schema
   .merge(step3Schema)
   .merge(step4Schema);
 
-
-type AllStepsType = z.infer<typeof allStepsSchema>;
-
-const fieldNames = [
-  "message",
-  "fullName",
-  "email",
-  "phone",
-  "address",
-  "otherInfo",
-  "organization",
-  "position",
-  "reason",
-] as const;
-
-type FieldName = typeof fieldNames[number];
-
-const steps: {
-  label: string;
-  fields: FieldName[];
-  schema: z.ZodTypeAny;
-}[] = [
+const steps = [
   {
     label: "Personal Info",
     fields: ["fullName", "email", "phone"],
@@ -77,7 +57,8 @@ const steps: {
 export default function ContactPage() {
   const [step, setStep] = useState(0);
   const [submitted, setSubmitted] = useState(false);
-  const methods = useForm<AllStepsType>({
+
+  const methods = useForm({
     resolver: zodResolver(allStepsSchema),
     mode: "onTouched",
     defaultValues: {
@@ -101,23 +82,21 @@ export default function ContactPage() {
   } = methods;
 
   const onNext = async () => {
-  if (step >= steps.length) return; // prevent overflow
+    if (step >= steps.length) return;
+    const currentStepFields = steps[step].fields;
+    const valid = await trigger(currentStepFields as Parameters<typeof trigger>[0]);
+    if (valid) setStep((s) => s + 1);
+  };
 
-  const currentStepFields = steps[step].fields;
+  const onBack = () => {
+    if (step > 0) setStep((s) => s - 1);
+  };
 
-  const valid = await trigger(currentStepFields); // assuming fields is string[]
-  if (valid) setStep((s) => s + 1);
-};
-
-
-  const onBack = () => setStep((s) => s - 1);
-
-  const onSubmit = (data: AllStepsType) => {
+  const onSubmit = (data:any) => {
     setSubmitted(true);
     console.log("Collaboration Request Submitted:", data);
   };
 
-  // Progress bar logic for 4 steps
   const progressPercents = [0, 33, 66, 100];
 
   return (
@@ -131,7 +110,7 @@ export default function ContactPage() {
             Please fill out this form to connect with the APO organization.
           </p>
         </div>
-        {/* Animated Progress Bar */}
+
         {!submitted && (
           <div className="mb-6">
             <div className="w-full h-2 bg-blue-100 rounded-full overflow-hidden">
@@ -142,6 +121,7 @@ export default function ContactPage() {
             </div>
           </div>
         )}
+
         {submitted ? (
           <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center">
             <h2 className="text-2xl font-bold mb-2 text-[#10284A] text-center">
@@ -150,11 +130,6 @@ export default function ContactPage() {
             <p className="bg-orange-300 rounded-md p-4 text-center">
               We’ll be in touch shortly to discuss your collaboration request.
             </p>
-
-            {/*
-            
-            <button onClick={() => setSubmitted(false)} className="text-center cursor-pointer px-2 rounded-md border-[1px] border-[#10284A] mt-4 text-[#10284A]">back</button>
-            */}
           </div>
         ) : (
           <FormProvider {...methods}>
@@ -165,6 +140,7 @@ export default function ContactPage() {
               <div className="mb-6 text-sm text-[#10284A] font-semibold text-center">
                 Step {step + 1} of 4: {steps[step].label}
               </div>
+
               {step === 0 && (
                 <div className="space-y-5">
                   <div>
@@ -180,7 +156,7 @@ export default function ContactPage() {
                     />
                     {errors.fullName && (
                       <p className="text-red-500 text-xs mt-1">
-                        {errors.fullName.message as string}
+                        {errors.fullName.message}
                       </p>
                     )}
                   </div>
@@ -197,7 +173,7 @@ export default function ContactPage() {
                     />
                     {errors.email && (
                       <p className="text-red-500 text-xs mt-1">
-                        {errors.email.message as string}
+                        {errors.email.message}
                       </p>
                     )}
                   </div>
@@ -214,12 +190,13 @@ export default function ContactPage() {
                     />
                     {errors.phone && (
                       <p className="text-red-500 text-xs mt-1">
-                        {errors.phone.message as string}
+                        {errors.phone.message}
                       </p>
                     )}
                   </div>
                 </div>
               )}
+
               {step === 1 && (
                 <div className="space-y-5">
                   <div>
@@ -236,7 +213,7 @@ export default function ContactPage() {
                     />
                     {errors.address && (
                       <p className="text-red-500 text-xs mt-1">
-                        {errors.address.message as string}
+                        {errors.address.message}
                       </p>
                     )}
                   </div>
@@ -252,6 +229,7 @@ export default function ContactPage() {
                   </div>
                 </div>
               )}
+
               {step === 2 && (
                 <div className="space-y-5">
                   <div>
@@ -288,12 +266,13 @@ export default function ContactPage() {
                     />
                     {errors.reason && (
                       <p className="text-red-500 text-xs mt-1">
-                        {errors.reason.message as string}
+                        {errors.reason.message}
                       </p>
                     )}
                   </div>
                 </div>
               )}
+
               {step === 3 && (
                 <div className="space-y-5">
                   <div>
@@ -307,6 +286,7 @@ export default function ContactPage() {
                   </div>
                 </div>
               )}
+
               <div className="flex justify-between mt-8">
                 {step > 0 ? (
                   <button
@@ -319,6 +299,7 @@ export default function ContactPage() {
                 ) : (
                   <div />
                 )}
+
                 {step < 3 ? (
                   <button
                     type="button"
