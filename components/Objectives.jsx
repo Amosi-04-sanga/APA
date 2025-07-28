@@ -42,7 +42,89 @@ const Objectives = () => {
             Our objectives
           </h1>
         </div>
-        <div className="overflow-y  rounded-lg mt-8 h-[60vh] p-4 border-[#4272B2] border-solid border-2">
+
+         <div className="mt-8 p-4 ">
+          <div className="px-4 py-10 relative rounded-md text-white bg-[#2D3572]">
+            <p className="absolute -left-4 -top-2 z-10 w-8 h-8 rounded-full bg-inherit border-white border-solid border-2 text-xl p-1 flex justify-center items-center">
+              1
+            </p>
+            <p>
+              To improve quality of education, childhood schools and education
+              systems at large
+            </p>
+          </div>
+
+          <div className="px-4 py-10 mt-4 relative rounded-md text-white bg-[#2D3572]">
+            <p className="absolute -left-4 -top-2 z-10 w-8 h-8 rounded-full bg-inherit border-white border-solid border-2 text-xl p-1 flex justify-center items-center">
+              2
+            </p>
+            <p>
+              To facilitate effective parenting skills among parents and
+              guardians
+            </p>
+          </div>
+
+          <div className="px-4 py-10 mt-4 relative rounded-md text-white bg-[#2D3572]">
+            <p className="absolute -left-4 -top-2 z-10 w-8 h-8 rounded-full bg-inherit border-white border-solid border-2 text-xl p-1 flex justify-center items-center">
+              3
+            </p>
+            <p>
+              To improve quality of education childhood schools and education
+              systems at large
+            </p>
+          </div>
+
+          <div className="px-4 py-10 mt-4 relative rounded-md text-white bg-[#2D3572]">
+            <p className="absolute -left-4 -top-2 z-10 w-8 h-8 rounded-full bg-inherit border-white border-solid border-2 text-xl p-1 flex justify-center items-center">
+              4
+            </p>
+            <p>
+              implementing partner of program jumuishi ya taifa ya malezi,
+              makuzi na maendeleo ya awali ya mtoto[P](T-MMMAM)
+            </p>
+          </div>
+
+          <div className="px-4 py-10 mt-4 relative rounded-md text-white bg-[#2D3572]">
+            <p className="absolute -left-4 -top-2 z-10 w-8 h-8 rounded-full bg-inherit border-white border-solid border-2 text-xl p-1 flex justify-center items-center">
+              5
+            </p>
+            <p>
+              recorginizing and awarding the successfully parents in parenting
+              according to APA parenting standards
+            </p>
+          </div>
+
+          <div className="px-4 py-10 mt-4 relative rounded-md text-white bg-[#2D3572]">
+            <p className="absolute -left-4 -top-2 z-10 w-8 h-8 rounded-full bg-inherit border-white border-solid border-2 text-xl p-1 flex justify-center items-center">
+              6
+            </p>
+            <p>
+              providing youth with career coaching personal development and
+              preparatory parental knowledge
+            </p>
+          </div>
+
+          <div className="px-4 py-10 mt-4 relative rounded-md text-white bg-[#2D3572]">
+            <p className="absolute -left-4 -top-2 z-10 w-8 h-8 rounded-full bg-inherit border-white border-solid border-2 text-xl p-1 flex justify-center items-center">
+              7
+            </p>
+            <p>
+              Economic empowernmen for single parents to support the financial
+              costs for parenting
+            </p>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  );
+};
+
+export default Objectives;
+
+
+/*
+ <div className="overflow-y  rounded-lg mt-8 h-[60vh] p-4 border-[#4272B2] border-solid border-2">
           <div className="p-4 relative rounded-md text-white bg-[#2D3572]">
             <p className="absolute -left-4 -top-2 z-10 w-8 h-8 rounded-full bg-inherit border-white border-solid border-2 text-xl p-1 flex justify-center items-center">
               1
@@ -113,9 +195,4 @@ const Objectives = () => {
             </p>
           </div>
         </div>
-      </div>
-    </div>
-  );
-};
-
-export default Objectives;
+*/

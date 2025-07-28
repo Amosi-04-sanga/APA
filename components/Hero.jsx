@@ -47,10 +47,10 @@ const Hero = () => {
         </div>
       </div>
 
-      <section className="relative min-h-[80vh] md:h-[90vh] flex items-center justify-center">
-        <div className="bg-[#333] absolute left-0 top-0 z-10 min-h-[80vh] md:h-[90vh] w-full opacity-[.6]" />
+      <section className="relative min-h-[60vh] md:h-[70vh] flex items-center justify-center">
+        <div className="bg-[#333] absolute left-0 top-0 z-10 min-h-[60vh] md:h-[70vh] w-full opacity-[.6]" />
 
-        <div className={`absolute left-0 top-0 inset-0 min-h-[80vh] w-100vw `}>
+        <div className={`absolute left-0 top-0 inset-0 min-h-[60vh] md:h-[70vh] w-100vw `}>
           <Image
             src={HeroSlideshow[currentIndex].url}
             alt="Hero Background"
