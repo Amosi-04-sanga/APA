@@ -26,7 +26,7 @@ const OurTeam = () => {
       }
        
 
-      container.scrollLeft += scrollSpeed * direction
+      container.scrollLeft += scrollAmount * direction
 
     }
 
