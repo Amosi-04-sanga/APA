@@ -1,92 +1,71 @@
-import { members } from "@/constants";
+'use client'
+import { members, ourTeam } from "@/constants";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Collaborate } from ".";
 
+
 const OurTeam = () => {
+
+ const scrollRef = useRef(null)
+
+  useEffect(() => {
+    const container = scrollRef.current
+    if(!container) return
+
+    let scrollAmount = 1
+    let direction = 1
+
+    const scroll = () => {
+      if(
+        container.scrollLeft + container.clientWidth >= container.scrollWidth 
+      ) {
+        direction = -1
+      } else if (container.scrollLeft <= 0) {
+        direction = 1
+      }
+       
+
+      container.scrollLeft += scrollSpeed * direction
+
+    }
+
+  const interval = setInterval(scroll, 10)
+    return () => clearInterval(interval)
+  }, [])
+
   return (
-    <div className="text-center">
-      <h1 className="text-3xl inline-block font-bold px-1 text-[#10284A] bg-orange-100">
+    <div className="text-center ">
+      <h1 className="text-3xl mt-8 inline-block font-bold px-1 text-[#10284A] bg-orange-100">
         Our team
-      </h1>
+      </h1> 
 
-      <div className="relative  max-w-[700px] mx-auto mt-8 flex flex-wrap justify-center items-start gap-2 sm:gap-12">
-        <div className="px-8 py-4 shadow-md rounded-md flex flex-col justify-center items-center hover:scale-105 transition duration-200">
-          <div className="bg-blue-700 rounded-full p-[2px]">
-            <div className="rounded-full bg-blue-400 ">
+      <div ref={scrollRef} className="relative h-[300px] scorllbar-x mx-auto w-[90vw] mt-12 flex items-center  gap-4 sm:gap-12">
+        
+      {
+        ourTeam.map( (person, index) => (
+            <div key={index} className=" cursor-pointer block relative  py-4 flex-shrink-0 w-[180px] h-[230px] shadow-lg rounded-md hover:scale-110 transition duration-200">
+          <div className="bg-blue-700 rounded-full inline-block p-[2px]">
+            <div className="rounded-full bg-blue-400  w-[100px] h-[100px]">
               <img
-                src="/images/photos/photo.png"
+                src={person.url}
                 alt="photo of member"
-                className="w-[100px] h-[100px] md:w-[200px] md:h-[200px] rounded-full block object-contain"
+                className="w-full h-full rounded-full block object-contain"
               />
             </div>
           </div>
-          <p className="mt-2">Neus njugunya</p>
-          <p className="opacity-60">CEO of APO</p>
+          <p className="mt-2">{person.name}</p>
+          <p className="opacity-60">{person.position}</p>
         </div>
+        ))
+      }
 
-        <div className="px-8 py-4 shadow-md rounded-md  flex flex-col justify-center items-center hover:scale-105 transition duration-200">
-          <div className="bg-blue-700 rounded-full p-[2px]">
-            <div className="rounded-full bg-blue-400 ">
-              <img
-                src="/images/photos/girl.png"
-                alt="photo of member"
-                className="w-[100px] h-[100px] md:w-[200px] md:h-[200px] rounded-full block object-contain"
-              />
-            </div>
-          </div>
-          <p className="mt-2">Martin Kidudu</p>
-          <p className="opacity-60">CEO of APO</p>
-        </div>
+        
 
-        <div className="px-8 py-4 shadow-md rounded-md flex flex-col justify-center items-center hover:scale-105 transition duration-200">
-          <div className="bg-blue-700 rounded-full p-[2px]">
-            <div className="rounded-full bg-blue-400">
-              <img
-                src="/images/photos/photo.png"
-                alt="photo of member"
-                className="w-[100px] h-[100px] md:w-[200px] md:h-[200px] rounded-full block object-contain"
-              />
-            </div>
-          </div>
-          <p className="mt-2">Martin Kidudu</p>
-          <p className="opacity-60">
-            General Manager <br /> of APO
-          </p>
-        </div>
-
-        <div className="px-8 py-4 shadow-md rounded-md flex flex-col justify-center items-center hover:scale-105 transition duration-200">
-          <div className="bg-blue-700 rounded-full p-[2px]">
-            <div className="rounded-full bg-blue-400">
-              <img
-                src="/images/photos/girl.png"
-                alt="photo of member"
-                className="w-[100px] h-[100px] md:w-[200px] md:h-[200px] rounded-full block object-contain"
-              />
-            </div>
-          </div>
-          <p className="mt-2">Dinnah Munyu</p>
-          <p className="opacity-60">IT Manager of APO</p>
-        </div>
-
-        <div className="px-8 py-4 shadow-md rounded-md flex flex-col justify-center items-center hover:scale-105 transition duration-200">
-          <div className="bg-blue-700 rounded-full p-[2px]">
-            <div className="rounded-full bg-blue-400 ">
-              <img
-                src="/images/photos/girl.png"
-                alt="photo of member"
-                className="w-[100px] h-[100px] md:w-[200px] md:h-[200px] rounded-full block object-contain"
-              />
-            </div>
-          </div>
-          <p className="mt-2">Anifa malatu</p>
-          <p className="opacity-60">CEO of APO</p>
-        </div>
-
-        <div className="absolute -bottom-8 left-[50%] -translate-x-1/2 w-[120px] h-1 bg-gradient-to-r from-white via-blue-500 to-white" />
+        <div className="absolute -bottom-12 left-[50%] -translate-x-1/2 w-[120px] h-1 bg-gradient-to-r from-white via-blue-500 to-white" />
       </div>
       {}
-      <div className="mt-28">
+      <div className="mt-20">
         <Collaborate />
       </div>
     </div>

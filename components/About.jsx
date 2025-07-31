@@ -4,7 +4,7 @@ import { values } from "@/constants";
 
 const About = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-12">
       <div className="mt-16 relative h-[80vh] bg-fixed bg-[url('/images/bg-vision.svg')] bg-cover bg-center">
         <div className="bg-[#222222] opacity-60 absolute top-0 left-0 w-full h-full z-[1] " />
 
@@ -17,7 +17,7 @@ const About = () => {
               width={80}
               height={80}
             />
-            <h1 className="text-2xl">Our vision</h1>
+            <h1 className="text-2xl">Our <span className="text-yellow-400">vision</span></h1>
             <p>
               we envision a developed and effectively performing generation.
             </p>
@@ -31,7 +31,7 @@ const About = () => {
               width={70}
               height={70}
             />
-            <h1 className="text-2xl ">Our Misson</h1>
+            <h1 className="text-2xl ">Our <span className="text-yellow-400">Mission</span></h1>
             <p>
               imparting parents, guardians, youth and children stakeholders with
               efficient parenting skills and knowledge.
@@ -50,7 +50,7 @@ const About = () => {
           height={80}
         /> 
 
-        <h1 className="text-2xl text-center font-bold text-[#10284A]">Core values</h1>
+        <h1 className="text-2xl text-center font-bold">Core <span className="text-[#199DEF]">Values</span> </h1>
 
         <div className="mt-4 pb-10 mb-10 grid place-content-center ">
           {values.map((item, index) => (

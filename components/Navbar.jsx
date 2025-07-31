@@ -12,9 +12,10 @@ const Navbar = () => {
 
   return (
     <div className="bg-[#10284A] sticky top-0 left-0 z-20 flex justify-between items-center h-[70px] p-2">
-      <p className="text-white text-sm">
-        info@africaparenting.org
-      </p>
+      <div className="text-white flex flex-col text-sm">
+        <h1 className="uppercase">africa parenting organization</h1>
+        <p className="italic">info@africaparenting.org</p>
+      </div>
 
       <div className="px-4 cursor-pointer">
         <Image

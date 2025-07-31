@@ -118,4 +118,82 @@ const members = [
   },
 ];
 
-export { navLinks, HeroSlideshow, values, posts, parentingValues, members };
+const objectives = [
+  {
+    id: '1',
+    text: 'To improve quality of education, childhood schools and education systems at large'
+  },
+  {
+    id: '2',
+    text: 'To facilitate effective parenting skills among parents and guardians'
+  },
+  {
+    id: '3',
+    text: 'To improve quality of education childhood schools and education systems at large'
+  },
+  {
+    id: '4',
+    text: 'implementing partner of program jumuishi ya taifa ya malezi, makuzi na maendeleo ya awali ya mtoto[P](T-MMMAM)'
+  },
+  {
+    id: '5',
+    text: 'To improve quality of education, childhood schools and education systems at large'
+  },
+  {
+    id: '6',
+    text: 'recorginizing and awarding the successfully parents in parenting according to APA parenting standards'
+  },
+  {
+    id: '7',
+    text: 'providing youth with career coaching personal development and preparatory parental knowledge'
+  },
+]
+
+const ourTeam = [
+  {
+    url: '/images/photos/photo.png',
+    name: 'Neus njugunya',
+    position: 'CEO of APO'
+  },
+  {
+    url: '/images/photos/girl.png',
+    name: 'Martin Kidudu',
+    position: 'Manager of APO'
+  },
+  {
+    url: '/images/photos/photo.png',
+    name: 'Neus njugunya',
+    position: 'Psychologist'
+  },
+  {
+    url: '/images/photos/photo.png',
+    name: 'Neus njugunya',
+    position: 'Scientist'
+  },
+  {
+    url: '/images/photos/photo.png',
+    name: 'Neus njugunya',
+    position: 'CEO of APO'
+  },
+  {
+    url: '/images/photos/photo.png',
+    name: 'Neus njugunya',
+    position: 'CEO of APO'
+  },
+  {
+    url: '/images/photos/photo.png',
+    name: 'Neus njugunya',
+    position: 'CEO of APO'
+  },
+  {
+    url: '/images/photos/photo.png',
+    name: 'Neus njugunya',
+    position: 'CEO of APO'
+  },
+  {
+    url: '/images/photos/photo.png',
+    name: 'Neus njugunya',
+    position: 'CEO of APO'
+  },
+]
+export {ourTeam, navLinks, HeroSlideshow, values, posts, parentingValues, members, objectives };

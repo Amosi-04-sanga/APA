@@ -1,8 +1,9 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FormProvider, useForm } from "react-hook-form";
+
 
 // Zod schemas (can remain even in JSX)
 const step1Schema = z.object({
@@ -57,6 +58,8 @@ const steps = [
 export default function ContactPage() {
   const [step, setStep] = useState(0);
   const [submitted, setSubmitted] = useState(false);
+ 
+  
 
   const methods = useForm({
     resolver: zodResolver(allStepsSchema),
@@ -100,7 +103,7 @@ export default function ContactPage() {
   const progressPercents = [0, 33, 66, 100];
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100 py-10 px-2 flex items-center justify-center text-left">
+    <main className="min-h-screen bg-gradient-to-br from-blue-200 via-blue-100 to-blue-300 py-10 px-2 flex items-center justify-center text-left">
       <div className="w-full max-w-md mx-auto">
         <div className="mb-8 px-6 text-center">
           <h1 className="text-3xl sm:text-4xl font-extrabold text-[#10284A] mb-2">

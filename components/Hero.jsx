@@ -75,7 +75,7 @@ const Hero = () => {
             </h1>
           </Fade>
         </div>
-        <button
+          <button
           onClick={toLeftHandler}
           className="absolute z-10 left-4 top-[50%] border-[#c8e4a3] border-[1px] rounded-full p-1 translate-y-2/4 cursor-pointer text-white font-bold uppercase"
         >
