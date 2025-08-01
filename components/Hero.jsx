@@ -4,7 +4,7 @@ import { HeroSlideshow } from "../constants";
 import Image from "next/image";
 import { Fade, Slide } from "react-awesome-reveal";
 
-
+ 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -30,9 +30,9 @@ const Hero = () => {
 
   return (
     <div>
-      <div className="flex items-center justify-around h-[30vh]">
+      <div className="bg-[#10284A] flex items-center justify-around h-[30vh]">
         <Slide className="p-2">
-          <p className="md:text-3xl text-yellow-800 text-2xl uppercase font-bold ">
+          <p className="md:text-3xl text-yellow-200 text-2xl uppercase ">
             The smartest guide <br /> for nurturing{" "}
           </p>
         </Slide>
@@ -69,7 +69,7 @@ const Hero = () => {
 
         <div className="flex flex-col justify-center items-center absolute left-[50%] -translate-x-2/4 top-[50%] -translate-y-2/4 z-10 min-h-[80vh] md:h-[90vh] max-sm:w-auto text-center text-white">
           <Fade className="sm:w-[400px] max-sm:w-[250px]">
-            <h1 className="text-2xl md:text-3xl text-white leading-10 font-bold tracking-wider uppercase">
+            <h1 className="text-2xl md:text-3xl text-yellow-200 leading-10 tracking-wider uppercase">
               {" "}
               {HeroSlideshow[currentIndex].text}{" "}
             </h1>

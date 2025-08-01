@@ -16,7 +16,7 @@ const Objectives = () => {
           height={50}
         />
         <div className="text-center">
-          <h1 className="text-center text-3xl mt-4 text-[#10284A] inline-block px-1 mx-auto bg-orange-100 font-bold">
+          <h1 className="text-center text-3xl mt-4 text-[#10284A] inline-block px-1 mx-auto bg-yellow-200 font-bold">
             Who we are
           </h1>
         </div>
@@ -53,7 +53,7 @@ const Objectives = () => {
 
           {
             objectives.map( (objective, index) => (
-               <div key={index} className="px-4 py-6 relative rounded-lg text-white bg-[#2D3572]">
+               <div key={index} className="px-4 py-4 relative rounded-lg text-white bg-[#2D3572]">
             <p className="absolute -left-4 -top-1 z-10 w-6 h-6 rounded-full bg-inherit border-white border-solid border-2 text-xl p-1 flex justify-center items-center">
               {objective.id}
             </p>

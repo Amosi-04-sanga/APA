@@ -1,11 +1,28 @@
 'use client'
 import { members, ourTeam } from "@/constants";
 import Image from "next/image";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Collaborate } from ".";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 
 const OurTeam = () => {
+
+   const [startAnimation, setStartAnimation] = useState(false);
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+    triggerOnce: false,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setStartAnimation(true);
+    } else {
+      setStartAnimation(false);
+    }
+  }, [inView]);
 
  const scrollRef = useRef(null)
 
@@ -35,12 +52,25 @@ const OurTeam = () => {
   }, [])
 
   return (
-    <div className="text-center ">
+    <div
+          className="text-center ">
       <h1 className="text-3xl mt-8 inline-block font-bold px-1 text-[#10284A] bg-orange-100">
         Our team
       </h1> 
+      <p className="mt-4 mx-4">our team is available for the support and inovation conserning parenting and nurturing</p>
 
-      <div ref={scrollRef} className="relative h-[300px] scorllbar-x mx-auto w-[90vw] mt-12 flex items-center  gap-4 sm:gap-12">
+      <div 
+       ref={ref}
+      className="mt-8 flex flex-col text-center">
+         <span className="text-4xl font-bold text-[#10284A]">
+          <CountUp
+                start={startAnimation ? 0 : undefined}
+                end={10}
+              /> {'+'}
+          </span> <span className="text-blue-700 text-xl"> members</span>
+      </div>
+
+      <div ref={scrollRef} className="relative h-[300px] scorllbar-x mx-auto w-[90vw] mt-4 flex items-center  gap-4 sm:gap-12">
         
       {
         ourTeam.map( (person, index) => (
