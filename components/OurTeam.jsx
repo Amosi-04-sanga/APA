@@ -27,30 +27,57 @@ const OurTeam = () => {
 
  const scrollRef = useRef(null)
 
-  useEffect(() => {
-    const container = scrollRef.current
-    if(!container) return
+useEffect(() => {
+  const el = scrollRef.current;
+  if (!el) return;
 
-    let scrollAmount = 1
-    let direction = 1
+  let direction = 1;           // 1 → right, -1 → left
+  const speed = 3;           // px per frame; tweak to taste
+  let hovered = false;
+  let rafId = 0;
 
-    const scroll = () => {
-      if(
-        container.scrollLeft + container.clientWidth >= container.scrollWidth 
-      ) {
-        direction = -1
-      } else if (container.scrollLeft <= 0) {
-        direction = 1
+  const tick = () => {
+    if (!hovered) {
+      // bounce at edges
+      if (el.scrollLeft + el.clientWidth >= el.scrollWidth - 1) {
+        direction = -1;
+      } else if (el.scrollLeft <= 0) {
+        direction = 1;
       }
-       
-
-      container.scrollLeft += scrollAmount * direction
-
+      el.scrollLeft += speed * direction;
     }
+    rafId = requestAnimationFrame(tick);
+  };
 
-  const interval = setInterval(scroll, 10)
-    return () => clearInterval(interval)
-  }, [])
+  // pause/resume on hover
+  const onEnter = () => { hovered = true; };
+  const onLeave = () => { hovered = false; };
+
+  // allow natural manual scroll:
+  //  - vertical wheel → horizontal scroll in the strip
+  //  - prevent page from scrolling while interacting with the strip
+  const onWheel = (e) => {
+    if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+      e.preventDefault();
+      el.scrollLeft += e.deltaY;
+    }
+  };
+
+  el.addEventListener("pointerenter", onEnter);
+  el.addEventListener("pointerleave", onLeave);
+  el.addEventListener("wheel", onWheel, { passive: false });
+
+  rafId = requestAnimationFrame(tick);
+
+  return () => {
+    cancelAnimationFrame(rafId);
+    el.removeEventListener("pointerenter", onEnter);
+    el.removeEventListener("pointerleave", onLeave);
+    el.removeEventListener("wheel", onWheel);
+  };
+}, [scrollRef.current]);
+
+
 
   return (
     <div
@@ -65,7 +92,7 @@ const OurTeam = () => {
       className="mt-8 flex flex-col text-center">
          <span className="text-4xl font-bold text-[#10284A]">
           <CountUp
-                start={startAnimation ? 0 : undefined}
+                start={startAnimation ? 0 : undefined} 
                 end={10}
               /> {'+'}
           </span> <span className="text-blue-700 text-xl"> members</span>
