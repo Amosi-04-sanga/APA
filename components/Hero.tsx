@@ -52,7 +52,7 @@ export default function Hero() {
     if (document.visibilityState !== "visible") return;
     el.muted = true;
     const p = el.play();
-    if (p && typeof (p as any).catch === "function") {
+    if (p && typeof (p).catch === "function") {
       (p as Promise<void>).catch(() => {});
     }
   };
