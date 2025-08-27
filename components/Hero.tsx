@@ -1,8 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { HeroSlideshow } from "../constants";
 import Image from "next/image";
-import { Fade, Slide } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 import Link from "next/link";
 
 
