@@ -122,11 +122,7 @@ export default function Hero() {
   }, [currentSlide]);
 
 
-  const handleBook = () => {
-    const el = document.querySelector("#booking");
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
-
+ 
   return (
 
      <div>
