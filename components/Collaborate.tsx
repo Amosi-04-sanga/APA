@@ -110,7 +110,7 @@ export default function ContactPage() {
             We welcome collaboration!
           </h1>
           <p className="text-gray-600 text-base sm:text-lg">
-            Please fill out this form to connect with the APO organization.
+            Please fill out this form to request partinership with APO organization.
           </p>
         </div>
 

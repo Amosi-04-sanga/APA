@@ -7,11 +7,13 @@ import Contacts from "./Contacts";
 import Footer from "./Footer";
 import Collaborate from "./Collaborate";
 import Departments from "./Departments";
+import FadeUp from "./UI/FadeUp";
 
 import OurTeam from "./OurTeam";
 
 export {
   Navbar,
+  FadeUp,
   Hero,
   Objectives,
   About,

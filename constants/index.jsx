@@ -49,7 +49,7 @@ const navLinks = [
 const HeroSlideshow = [
   {
     url: "/images/slideshow/slideshow1.jpg",
-    text: "Happy family, Better parenting, Better kids literacy",
+    text: "Better parenting, Happy family, Better kids literacy",
   },
   {
     url: "/images/slideshow/slideshow2.jpg",
@@ -66,7 +66,7 @@ const values = [
   "responsibility",
   "time management",
   "love",
-  "creativity",
+  "creativity and innovation",
   "care",
 ];
 
@@ -121,79 +121,74 @@ const members = [
 const objectives = [
   {
     id: '1',
-    text: 'To improve quality of education, childhood schools and education systems at large'
+    text: 'Providing career profile analysis(CPA) for children showing potentials, talents, and traits with a clear responsive parental guide from DNA technology'
   },
   {
     id: '2',
-    text: 'To facilitate effective parenting skills among parents and guardians'
+    text: 'To improve quality of education in childhood schools and education system at large'
   },
   {
     id: '3',
-    text: 'To improve quality of education childhood schools and education systems at large'
+    text: 'To facilitate parenting skills among parents and guardians'
   },
   {
     id: '4',
-    text: 'implementing partner of program jumuishi ya taifa ya malezi, makuzi na maendeleo ya awali ya mtoto[P](T-MMMAM)'
+    text: 'Implementing partner of the National Integrated Program for Early Childhood Care, Development, and Education (T-MMMAM).'
   },
   {
     id: '5',
-    text: 'To improve quality of education, childhood schools and education systems at large'
+    text: 'Recorginizing and awarding the successfully parents in parenting according to AP0 parenting standards'
   },
   {
     id: '6',
-    text: 'recorginizing and awarding the successfully parents in parenting according to APA parenting standards'
+    text: 'Providing youth with career coaching personal development and preparatory parental knowledge'
   },
   {
     id: '7',
-    text: 'providing youth with career coaching personal development and preparatory parental knowledge'
+    text: 'Economic empowerment for single parents to support the financial costs for parenting'
   },
 ]
 
 const ourTeam = [
   {
-    url: '/images/photos/photo.png',
+    url: '/images/photos/neuss.jpg',
     name: 'Neus njugunya',
-    position: 'CEO of APO'
+    position: 'CEO of APO',
+    phone: '255743546890'
   },
   {
-    url: '/images/photos/girl.png',
-    name: 'Martin Kidudu',
-    position: 'Manager of APO'
+    url: '/images/photos/dinnah.jpg',
+    name: 'Dinnah Laurent Munyu',
+    position: 'Secretary of APO',
+    phone: '255768848959'
   },
   {
-    url: '/images/photos/photo.png',
-    name: 'Neus njugunya',
-    position: 'Psychologist'
+    url: '/images/photos/staff1.jpg',
+    name: 'Fadhili Bajuta',
+    position: 'IT',
+    phone: '255758679407'
   },
   {
-    url: '/images/photos/photo.png',
-    name: 'Neus njugunya',
-    position: 'Scientist'
+    url: '/images/photos/staff2.jpg',
+    name: 'Emmanuel Deus',
+    position: 'Operation manager',
+    phone: '255743546890'
+
   },
   {
-    url: '/images/photos/photo.png',
-    name: 'Neus njugunya',
-    position: 'CEO of APO'
+    url: '/images/photos/staff3.jpg',
+    name: 'Lucas Chunga',
+    position: 'Treasurer',
+    phone: '255620292517'
+
   },
   {
-    url: '/images/photos/photo.png',
-    name: 'Neus njugunya',
-    position: 'CEO of APO'
+    url: '/images/photos/staff4.jpg',
+    name: 'Willium Njiku',
+    position: 'Operation manager',
+    phone: '255755247180'
+
   },
-  {
-    url: '/images/photos/photo.png',
-    name: 'Neus njugunya',
-    position: 'CEO of APO'
-  },
-  {
-    url: '/images/photos/photo.png',
-    name: 'Neus njugunya',
-    position: 'CEO of APO'
-  },
-  {
-    url: '/images/photos/photo.png',
-    name: 'Neus njugunya',
-    position: 'CEO of APO'
-  },
+ 
 ]
 export {ourTeam, navLinks, HeroSlideshow, values, posts, parentingValues, members, objectives };

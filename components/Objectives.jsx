@@ -2,25 +2,31 @@ import { objectives } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { FadeUp } from ".";
 
 
 const Objectives = () => {
   return (
-    <div className="mt-16 ">
-      <div className="mx-8">
+    <div className="mt-8">
+      
+      <FadeUp>
+        <div className="px-4 sm:flex-row-reverse sm:items-center sm:justify-center sm:gap-8 flex gap-4 flex-col">
+
+        <div className="flex flex-col max-w-[450px]">
+          <div className=" shrink-0 ">
         <Image
           className="block mx-auto"
           src="/images/about.svg"
           alt=""
-          width={50}
-          height={50}
+          width={40}
+          height={40}
         />
         <div className="text-center">
-          <h1 className="text-center text-3xl mt-4 text-[#10284A] inline-block px-1 mx-auto bg-yellow-200 font-bold">
+          <h1 className="text-center text-3xl mt-4 text-[#10284A] inline-block px-4 mx-auto bg-blue-100 font-bold">
             Who we are
           </h1>
         </div>
-        <p className="mt-4">
+        <p className="mt-4 text-left">
           We believe in nurturing the next generation of confident,
           compassionate, and successful children. we aim to share valuable
           insights, practical tips, and cultural wisdom on effective parenting
@@ -33,8 +39,37 @@ const Objectives = () => {
           </Link>
         </button>
       </div>
+        <div className="mt-4 text-center">
+          <h1 className="text-center text-3xl mt-4 text-[#10284A] inline-block px-4 mx-auto bg-blue-100 font-bold">
+            Why APO
+          </h1>
+          <p className="mt-2">This organization is dedicated to solve the following problems</p>
+          <div className="mt-2 text-left ">
+            <div><span>🔹</span> Inssuficient knowledge of parenting</div>
+            <div className="flex gap-1"><span>🔹</span> <p>Unholistic and less inclusive education system that does not promote talents and develop all the genius in children</p></div>
+            <p><span>🔹</span> Lacking innovative generation</p>
+            <p><span>🔹</span> Poor morals among teenagers</p>
+            <p><span>🔹</span> High rate of children trafficking</p>
+            <p><span>🔹</span> Fear of responsibility</p>
+            <div className="flex gap-1"><span>🔹</span> <p>Increasing rate of women in single mothering</p></div>
 
-      <div className="mt-16 mx-4 max-w-[450px]">
+          </div>
+        </div>
+
+        </div>
+      <div className="shrink-0" >
+        <Image
+        src='/images/photos/about.png'
+        alt="photos"
+        width={350}
+        height={350}
+        className="block mx-auto"
+        />
+      </div>
+        </div>
+      </FadeUp>
+
+      <div className="mt-4 mx-4 max-w-[450px]">
         <Image
           src="/images/objectives.svg"
           alt="objectives"
@@ -48,12 +83,12 @@ const Objectives = () => {
           </h1>
         </div>
 
-         <div className="mt-8 p-1 ">
-         
+         <div className="mt-4 p-1 flex flex-wrap gap-4 md:gap-8 max-sm:justify-center md:pl-8 w-[90vw] ">
 
           {
             objectives.map( (objective, index) => (
-               <div key={index} className="px-4 py-4 relative rounded-lg text-white bg-[#2D3572]">
+              <FadeUp delay={0.1 * index} key={index}>
+                 <div className="text-center px-8 py-8 max-w-[350px] md:min-h-[150px] relative rounded-lg text-white bg-[#2D3572]">
             <p className="absolute -left-4 -top-1 z-10 w-6 h-6 rounded-full bg-inherit border-white border-solid border-2 text-xl p-1 flex justify-center items-center">
               {objective.id}
             </p>
@@ -61,6 +96,7 @@ const Objectives = () => {
               {objective.text}
             </p>
           </div>
+              </FadeUp>
             ))
           }
         </div>
