@@ -1,11 +1,23 @@
 import { posts } from "@/constants";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const page = () => {
   return (
-    <div className="px-8">
-      <h1 className="mt-8 font-bold text-center text-2xl">
+    <div className="px-8 ">
+
+      <div className=" max-w-[350px] mt-8 md:flex md:gap4 md:items-center">
+       <div className="shrink-0 max-w-[350px]">
+         <div className="bg-orange-400 min-h-[40vh] ">
+        <img
+         src='/images/photos/kidtalents.jpg'
+         alt="kids talents"
+         className="block w-full h-full mx-auto"
+        />
+      </div>
+
+      <h1 className="mt-4 font-bold text-center text-2xl">
         Developing your kids talents
       </h1>
 
@@ -16,7 +28,9 @@ const page = () => {
         talents. Talents are like seeds—if nurtured and developed, they can grow
         into something amazing!
       </p>
-      <h1 className="mt-8 text-center text-xl font-bold">
+       </div>
+      <div className="shrink-0 max-w-[300px]">
+        <h1 className="mt-8 text-center text-xl font-bold">
         ways children can develop their talents
       </h1>
       <p className="mt-4">
@@ -27,6 +41,8 @@ const page = () => {
         helping children identify and develop their talents by providing
         encouragement and opportunities to learn.
       </p>
+      </div>
+      </div>
 
       <h1 className="text-center font-bold text-xl mt-8">
         kids talents recent posts

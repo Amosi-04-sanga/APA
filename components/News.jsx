@@ -7,8 +7,9 @@ const News = () => {
     <div className="mt-8 px-8 relative">
       <h1 className="text-3xl text-center font-bold">Latest news</h1>
 
-      <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
-        {posts.map((post, index) => (
+      <div className="mt-8 ">
+        <div className="flex flex-wrap justify-center gap-4">
+          {posts.map((post, index) => (
           <div key={index} className="flex flex-col w-[330px]">
             <div className="">
               <img
@@ -32,6 +33,7 @@ const News = () => {
             </button>
           </div>
         ))}
+        </div>
 
         <div className="text-center mt-8">
           {" "}

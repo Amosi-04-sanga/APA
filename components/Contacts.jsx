@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { Zoom } from "react-awesome-reveal";
 import emailjs from "@emailjs/browser";
+import { FadeUp } from ".";
 
 
 const Contacts = () => {
@@ -53,17 +54,19 @@ const Contacts = () => {
   return (
     <div className='mt-20 px-8' id="contacts" >
         <h1 className="text-3xl font-bold text-center">Get in touch with us</h1>
-        
-        <div className="mt-4">
+        <div className="flex items-center justify-center">
+        <div className="mt-4 mx-auto"> 
             <p>Call: +255743546890</p>
             <p>Adress: P. O. Box 1493 Mbuyuni</p>
             <p>Email: neus@apo.com</p>
         </div>
 
-        <div className="mt-8">
-            <h1 className="text-xl">Email us by filling credentials below:</h1>
+        </div>
+
+        <div className="mt-4">
+            <h1 className="text-center">Email us by filling credentials below:</h1>
             
-            <Zoom>
+            <FadeUp>
         <div className="rounded-lg mt-6 bg-blue-300 p-4 py-8 mx-auto max-w-[400px]">
           <form onSubmit={submitHandler}>
             <div className="mt-4">
@@ -106,7 +109,7 @@ const Contacts = () => {
             </div>
           </form>
         </div>
-      </Zoom>
+      </FadeUp>
         </div>
 
     </div>

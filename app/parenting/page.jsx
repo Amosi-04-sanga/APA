@@ -2,12 +2,13 @@ import React from "react";
 import { parentingValues, posts } from "../../constants";
 import Image from "next/image";
 import Link from "next/link";
+import { FadeUp } from "@/components";
 
 const page = () => {
   return (
     <div className="px-8">
       <div className="text-center">
-        <h1 className="mt-8 inline-block font-bold text-3xl text-center px-2  text-[#10284A] bg-orange-200">
+        <h1 className="mt-8 inline-block font-bold text-3xl text-center px-4 py-1 rounded-l-xl rounded-tr-xl  text-[#10284A] bg-blue-100">
           Parenting
         </h1>
       </div>
@@ -28,21 +29,47 @@ const page = () => {
         discover every children talent within a child and suggest a life carrier
         related to that talent
       </p>
-
-      <h1 className="mt-8 text-center text-xl text-[#10284A] font-bold">
-        Who is successfull parent
+     
+     <div className="md:flex gap-4">
+      
+      <div className="mt-16">
+        <div>
+          <Image
+          src='/images/icons/standards.png'
+          alt="standards icon"
+          width={120}
+          height={90}
+          className="block mx-auto"
+          />
+        </div>
+        <h1 className="mt-2 text-center text-xl text-[#10284A] font-bold">
+        APO parenting standards
       </h1>
       <p className="mt-2 italic">
-        here are 7 key characters on successfull parenting{" "}
+        This is a measure of efficiency of your ability for nurturing as a parent{" "}
       </p>
       <div className="mt-2">
         {parentingValues.map((item, index) => (
-          <div key={index} className="flex gap-2 justify-start">
-            <Image src="/images/check.svg" alt="" width={10} height={10} />
+          <FadeUp delay={0.2 * index} key={index}>
+            <div className="flex gap-2 justify-start">
+            <p className="text-blue-700"> 0{index + 1}. </p>
             <p>{item}</p>
           </div>
+          </FadeUp>
         ))}
       </div>
+      </div>
+
+    <div className="max-w-[450px] min-w-[300px] flex justify-center items-center mt-4 overflow-hidden">
+  <iframe
+    src="https://docs.google.com/forms/d/e/1FAIpQLSfb51wQRGnOnVu2QqBN_cMxB-tK2zDkDfAg8uRRikcfToELWg/viewform?embedded=true"
+    className="w-full max-w-3xl h-[700px] border-0 rounded-xl shadow-md"
+  >
+    Loading…
+  </iframe>
+</div>
+
+     </div>
 
       <h1 className="text-center font-bold text-xl mt-8">
         parenting recent posts
@@ -70,7 +97,7 @@ const page = () => {
                   practices vary widely across countries and ethnic group
                 </p>
 
-                <button className="block mx-auto mt-4 px-2 py-1 hover:bg-[#199DEF] transition-all duration-300 rounded-md border-2 border-solid border-[#199DEF]">
+                <button className="block mt-4 px-2 py-1 hover:bg-[#199DEF] transition-all duration-300 rounded-md border-2 border-solid border-[#199DEF]">
                   Read More
                 </button>
               </div>

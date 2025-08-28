@@ -71,13 +71,12 @@ const values = [
 ];
 
 const parentingValues = [
-  "Demonstrates Unconditional Love",
-  "Provides Consistent Guidance and Disciplin",
-  "Models Positive Behavior",
-  "Nurtures Emotional and Mental Well-being",
-  "Encourages Education and Lifelong Learning",
-  "Instills Strong Moral and Spiritual Values",
-  "Prepares Children for Independence",
+  "Providing your child with basic needs",
+  "Providing your child with an education at least up to the secondary level",
+  "Discovering and developing all of your child’s talents",
+  "Showing your child true love through your example",
+  "Providing your child with a material inheritance",
+  "Expose your child to God, and He will provide what you cannot",
 ];
 
 const members = [
@@ -192,3 +191,6 @@ const ourTeam = [
  
 ]
 export {ourTeam, navLinks, HeroSlideshow, values, posts, parentingValues, members, objectives };
+
+
+

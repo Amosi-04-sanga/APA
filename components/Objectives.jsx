@@ -69,7 +69,7 @@ const Objectives = () => {
         </div>
       </FadeUp>
 
-      <div className="mt-4 mx-4 max-w-[450px]">
+      <div className="mt-12 mx-4 ">
         <Image
           src="/images/objectives.svg"
           alt="objectives"
