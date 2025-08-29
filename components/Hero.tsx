@@ -5,7 +5,6 @@ import { Slide } from "react-awesome-reveal";
 import Link from "next/link";
 
 
-
 const SLIDES = [
   {
     type: "image",
@@ -145,7 +144,7 @@ export default function Hero() {
       </div>
 
 
-    <section id="hero" className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative h-[70vh] w-full flex items-center justify-center overflow-hidden">
       
       {/* Slideshow background */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">

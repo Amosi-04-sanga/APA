@@ -32,7 +32,7 @@ useEffect(() => {
   if (!el) return;
 
   let direction = 1;           // 1 → right, -1 → left
-  const speed = 3;           // px per frame; tweak to taste
+  const speed = 1;           // px per frame; tweak to taste
   let hovered = false;
   let rafId = 0;
 
@@ -88,6 +88,7 @@ useEffect(() => {
       <p className="mt-4 mx-4">our team is available for the support and inovation conserning parenting and nurturing</p>
 
       <div 
+      ref={ref}
       className="mt-2 flex flex-col text-center">
          <span className="text-4xl font-bold text-[#10284A]">
           <CountUp
@@ -97,13 +98,13 @@ useEffect(() => {
           </span> <span className="text-gray-700 text-xl"> members</span>
       </div>
 
-      <div className="relative h-[300px] scorllbar-x mx-auto w-[80vw] flex items-center  gap-4 sm:gap-12">
+      <div ref={scrollRef} className="relative h-[300px] scorllbar-x mx-auto w-[95vw] sm:w-[85vw] md:w-[75vw] flex items-center gap-x-4 sm:gap-12">
         
       {
         ourTeam.map( (person, index) => (
             <div key={index} className="cursor-pointer block relative  py-2 flex-shrink-0 w-[180px] h-[230px] shadow-lg rounded-md hover:scale-110 transition duration-200">
-          <div className="bg-blue-700 rounded-full inline-block p-[2px]">
-            <div className="rounded-full bg-blue-400  w-[100px] h-[100px]">
+          <div className="bg-blue-400 rounded-full inline-block p-[2px]">
+            <div className="rounded-full bg-blue-200  w-[100px] h-[100px]">
               <img
                 src={person.url}
                 alt="photo of member"
@@ -114,7 +115,7 @@ useEffect(() => {
          <div className="flex flex-col items-start p-2">
            <p className="mt-2 text-left">{person.name}</p>
           <p className="opacity-80 text-left">{person.position}</p>
-         <div className="bg-blue-200 flex items-center justify-center py-[4px] w-full rounded-md">
+         <div className="bg-blue-100/50 border-[1px] border-blue-400 flex items-center justify-center py-[4px] w-full rounded-md">
              <Link
                 href={`https://wa.me/${person.phone}?text=Hello%20$'hello'`}
                     target="_blank"
@@ -135,7 +136,7 @@ useEffect(() => {
         <div className="absolute -bottom-12 left-[50%] -translate-x-1/2 w-[120px] h-1 bg-gradient-to-r from-white via-blue-500 to-white" />
       </div>
       {}
-      <div className="mt-20">
+      <div className="mt-4">
         <Collaborate />
       </div>
     </div>

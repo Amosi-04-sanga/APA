@@ -62,10 +62,10 @@ const About = () => {
 
         <h1 className="pl-12 text-2xl text-left font-bold">Our Core <span className="text-[#199DEF]"> Values</span> </h1>
 
-        <div className="pl-12 mt-4 pb-10 min-w-[400px]">
+        <div className="pl-12 mt-4 pb-10 px-4 min-w-[300px]">
           {values.map((item, index) => (
             <div key={index} className="flex gap-2 justify-start items-center">
-              <span>🔹</span>
+              <span className="text-xl">🔹</span>
               <p className="text-xl capitalize text-[#10284A]">{item}</p>
             </div>
           ))}
