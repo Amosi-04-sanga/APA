@@ -9,10 +9,10 @@ const Objectives = () => {
   return (
     <div className="mt-8">
       
-      <FadeUp>
         <div className="px-4 sm:flex-row-reverse sm:items-center sm:justify-center sm:gap-8 flex gap-4 flex-col">
 
         <div className="flex flex-col max-w-[450px]">
+      <FadeUp>
           <div className=" shrink-0 ">
         <Image
           className="block mx-auto"
@@ -39,6 +39,9 @@ const Objectives = () => {
           </Link>
         </button>
       </div>
+      </FadeUp>
+
+        <FadeUp>
         <div className="mt-4 text-center">
           <h1 className="text-center text-3xl mt-4 text-[#10284A] inline-block px-4 mx-auto bg-blue-100 font-bold">
             Why APO
@@ -55,6 +58,8 @@ const Objectives = () => {
 
           </div>
         </div>
+      </FadeUp>
+
 
         </div>
       <div className="shrink-0" >
@@ -67,7 +72,6 @@ const Objectives = () => {
         />
       </div>
         </div>
-      </FadeUp>
 
       <div className="mt-12 mx-4 ">
         <Image
