@@ -62,12 +62,13 @@ const HeroSlideshow = [
 ];
 
 const values = [
-  "confidentiality",
-  "responsibility",
-  "time management",
-  "love",
-  "creativity and innovation",
-  "care",
+  "Confidentiality",
+  "Responsibility",
+  "Time management",
+  "Love",
+  "Creativity and innovation",
+  "Care",
+  "Education",
 ];
 
 const parentingValues = [

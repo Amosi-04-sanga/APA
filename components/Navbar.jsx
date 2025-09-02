@@ -6,16 +6,28 @@ import { navLinks } from "@/constants";
 import { Fade } from "react-awesome-reveal";
 import Link from "next/link";
 
+
+
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const pathname = usePathname();
 
   return (
-    <div className="bg-[#10284A] sticky top-0 left-0 z-20 flex justify-between items-center h-[70px] p-2">
-      <div className="text-white flex flex-col text-sm">
-        <h1 className="uppercase">africa parenting organization</h1>
-        <p className="italic">info@africaparenting.org</p>
-      </div>
+
+    <div className="bg-[#10284A] sticky top-0 left-0 z-40 shadow-sm shadow-slate-500  flex justify-between items-center  p-2">
+   <Link
+   href='/'
+   >
+      <div className="cursor-pointer">
+                <Image
+                  width={200}
+                  height={200}
+                  src="/images/logo.svg"
+                  alt="logo image"
+                  className=""
+                />
+              </div>
+   </Link>
 
       <div className="px-4 cursor-pointer">
         <Image
@@ -30,9 +42,9 @@ const Navbar = () => {
       <div
         className={`fixed ${
           !openMenu ? "-left-[80vw]" : "left-0"
-        } transition-all duration-800 z-40 bg-menu-light dark:bg-menu-dark md:hidden top-[70px] w-[80vw] sm:w-[70w] h-[90vh] flex justify-start`}
+        } transition-all duration-800 z-60 bg-menu-light dark:bg-menu-dark md:hidden top-[150px] w-[80vw] sm:w-[70w] h-[90vh] flex justify-start`}
       >
-        <div className="flex flex-col gap-4 bg-[#10284A] p-6 pr-28 pt-12">
+        <div className="flex flex-col gap-2 bg-[#10284A] p-6 pr-28 pt-12">
           {navLinks.map((link, index) => {
             const isActive =
               (pathname.includes(link.route) && link.route.length > 1) ||
@@ -42,7 +54,7 @@ const Navbar = () => {
                 <Fade cascade damping={index}>
                   <Link
                     href={link.route}
-                    onClick={() => setOpenMenu(false)}
+                    onClick={() => setOpenMenu(false)} 
                     className={`${
                       pathname === link.route && "bg-red-600"
                     } transition-all duration-100 hover:bg-red-600 flex p-2 gap-4 rounded-md cursor-pointer text-dark-1`}

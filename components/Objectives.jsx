@@ -23,14 +23,14 @@ const Objectives = () => {
         />
         <div className="text-center">
           <h1 className="text-center text-3xl mt-4 text-[#10284A] inline-block px-4 mx-auto bg-blue-100 font-bold">
-            Who we are
+            Who are we
           </h1>
         </div>
         <p className="mt-4 text-left">
           We believe in nurturing the next generation of confident,
-          compassionate, and successful children. we aim to share valuable
-          insights, practical tips, and cultural wisdom on effective parenting
-          we believe in developing children inborn talents and their potentials
+          compassionate, and successful children. We aim to share valuable
+          insights, practical tips, and cultural wisdom on effective parenting.
+          We believe in developing children inborn talents and their potentials
           for their bright future.
         </p>
         <button className="block mx-auto mt-4 px-2 py-1 hover:bg-[#199DEF] hover:text-white transition-all duration-300 rounded-md border-[1px] border-[#199DEF]">
@@ -48,13 +48,13 @@ const Objectives = () => {
           </h1>
           <p className="mt-2">This organization is dedicated to solve the following problems</p>
           <div className="mt-2 text-left ">
-            <div><span>🔹</span> Inssuficient knowledge of parenting</div>
-            <div className="flex gap-1"><span>🔹</span> <p>Unholistic and less inclusive education system that does not promote talents and develop all the genius in children</p></div>
-            <p><span>🔹</span> Lacking innovative generation</p>
-            <p><span>🔹</span> Poor morals among teenagers</p>
-            <p><span>🔹</span> High rate of children trafficking</p>
-            <p><span>🔹</span> Fear of responsibility</p>
-            <div className="flex gap-1"><span>🔹</span> <p>Increasing rate of women in single mothering</p></div>
+            <div><span>🔹</span> Inssuficient knowledge of parenting.</div>
+            <div className="flex gap-1"><span>🔹</span> <p>Unholistic and less inclusive education system that does not promote talents and develop all the genius in children.</p></div>
+            <p><span>🔹</span> Lacking innovative generation.</p>
+            <p><span>🔹</span> Poor morals among teenagers.</p>
+            <p><span>🔹</span> High rate of children trafficking.</p>
+            <p><span>🔹</span> Fear of responsibility.</p>
+            <div className="flex gap-1"><span>🔹</span> <p>Increasing rate of single mothers.</p></div>
 
           </div>
         </div>
@@ -112,77 +112,3 @@ const Objectives = () => {
 
 export default Objectives;
 
-
-/*
- <div className="overflow-y h-[60vh]  rounded-lg mt-8  p-4 border-[#4272B2] border-solid border-2">
-          <div className="p-4 relative rounded-md text-white bg-[#2D3572]">
-            <p className="absolute -left-4 -top-2 z-10 w-8 h-8 rounded-full bg-inherit border-white border-solid border-2 text-xl p-1 flex justify-center items-center">
-              1
-            </p>
-            <p>
-              To improve quality of education, childhood schools and education
-              systems at large
-            </p>
-          </div>
-
-          <div className="p-4 mt-4 relative rounded-md text-white bg-[#2D3572] text-right">
-            <p className="absolute -right-4 -top-2 z-10 w-8 h-8 rounded-full bg-inherit border-white border-solid border-2 text-xl p-1 flex justify-center items-center">
-              2
-            </p>
-            <p>
-              To facilitate effective parenting skills among parents and
-              guardians
-            </p>
-          </div>
-
-          <div className="p-4 mt-4 relative rounded-md text-white bg-[#2D3572]">
-            <p className="absolute -left-4 -top-2 z-10 w-8 h-8 rounded-full bg-inherit border-white border-solid border-2 text-xl p-1 flex justify-center items-center">
-              3
-            </p>
-            <p>
-              To improve quality of education childhood schools and education
-              systems at large
-            </p>
-          </div>
-
-          <div className="p-4 mt-4 relative rounded-md text-white bg-[#2D3572] text-right">
-            <p className="absolute -right-4 -top-2 z-10 w-8 h-8 rounded-full bg-inherit border-white border-solid border-2 text-xl p-1 flex justify-center items-center">
-              4
-            </p>
-            <p>
-              implementing partner of program jumuishi ya taifa ya malezi,
-              makuzi na maendeleo ya awali ya mtoto[P](T-MMMAM)
-            </p>
-          </div>
-
-          <div className="p-4 mt-4 relative rounded-md text-white bg-[#2D3572]">
-            <p className="absolute -left-4 -top-2 z-10 w-8 h-8 rounded-full bg-inherit border-white border-solid border-2 text-xl p-1 flex justify-center items-center">
-              5
-            </p>
-            <p>
-              recorginizing and awarding the successfully parents in parenting
-              according to APA parenting standards
-            </p>
-          </div>
-
-          <div className="p-4 mt-4 relative rounded-md text-white bg-[#2D3572] text-right">
-            <p className="absolute -right-4 -top-2 z-10 w-8 h-8 rounded-full bg-inherit border-white border-solid border-2 text-xl p-1 flex justify-center items-center">
-              6
-            </p>
-            <p>
-              providing youth with career coaching personal development and
-              preparatory parental knowledge
-            </p>
-          </div>
-
-          <div className="p-4 mt-4 relative rounded-md text-white bg-[#2D3572]">
-            <p className="absolute -left-4 -top-2 z-10 w-8 h-8 rounded-full bg-inherit border-white border-solid border-2 text-xl p-1 flex justify-center items-center">
-              7
-            </p>
-            <p>
-              Economic empowernmen for single parents to support the financial
-              costs for parenting
-            </p>
-          </div>
-        </div>
-*/

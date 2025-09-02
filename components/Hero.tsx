@@ -128,19 +128,18 @@ export default function Hero() {
        <div className="bg-[#10284A] flex items-center justify-around min-h-[20vh]">
         <Slide className="p-2">
           <div className="md:text-3xl text-yellow-200 text-2xl capitalize flex">
-            <span>The smartest guide <br /> for nurturing{" "}</span>
-          
+             <div className="cursor-pointer">
+                            <Image
+                              width={150}
+                              height={150}
+                              src="/images/icons/subhero.png"
+                              alt="logo image"
+                              className=""
+                            />
+                 </div>
           </div>
         </Slide>
-        <div className=" ">
-          <Image
-            width={150}
-            height={150}
-            src="/images/logo.svg"
-            alt="logo image"
-            className=""
-          />
-        </div>
+        
       </div>
 
 
@@ -224,6 +223,13 @@ export default function Hero() {
           </Link>
         )}
       </div>
+      
+      <Link
+      href='#contacts'
+      className=""
+      >
+        <button className="block animate-bounce z-20 absolute left-[40%] -translate-x-1/2 bottom-12 mx-auto bg-blue-500 mt-4 px-4 py-1 hover:border-[#8796a0] text-white transition-all duration-300 rounded-md border-2 border-solid border-[#c1c9ce]">Join Us</button>
+      </Link>
 
       {/* Prev / Next controls */}
       <button

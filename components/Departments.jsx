@@ -29,7 +29,7 @@ const departments = [
     name: 'DNA technology',
     icon: ComputerDesktopIcon,
     members: 3,
-    description: 'developing inovations on molecular biology conserning kids parenting and talent discovery.'
+    description: 'Developing innovations on molecular biology concerning kids talent discovery through DNA sequencing technology.'
   },
 ];
 

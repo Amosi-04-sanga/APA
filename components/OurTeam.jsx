@@ -82,10 +82,10 @@ useEffect(() => {
   return (
     <div
           className="text-center mt-16">
-      <h1 className="text-3xl mt-2 inline-block font-bold px-1 text-[#10284A] bg-orange-100">
+      <h1 className="text-3xl capitalize mt-2 inline-block font-bold px-1 text-[#10284A] bg-orange-100">
         Our team
       </h1> 
-      <p className="mt-4 mx-4">our team is available for the support and inovation conserning parenting and nurturing</p>
+      <p className="mt-4 mx-4">Our team is available for the support and innovation concerning parenting and nurturing</p>
 
       <div 
       ref={ref}
@@ -94,7 +94,7 @@ useEffect(() => {
           <CountUp
                 start={startAnimation ? 0 : undefined} 
                 end={10}
-              /> {'+'}
+              />{'+'}
           </span> <span className="text-gray-700 text-xl"> members</span>
       </div>
 

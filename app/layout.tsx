@@ -19,6 +19,10 @@ export default function RootLayout({
       <body
       
       >
+         <div className="text-white font-semibold bg-[#dfa261] py-1 flex flex-col justify-center items-center text-[16px]">
+                <h1 className="uppercase">africa parenting organization</h1>
+                <p className="italic">info@africaparenting.org</p>
+              </div>
         <Navbar/>
         {children}
         <Footer/>
